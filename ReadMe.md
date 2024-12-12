@@ -1,4 +1,5 @@
-# Kaleidescape Movies CSV Script (Python)
+# Kaleidescape Movies & Invoices CSV Script (Python)
+
 
 ## Setup
 
@@ -10,17 +11,35 @@ cd KaleidscapeMoviesCSV
 python -m venv .venv
 ```
 
-## Execute
+
+## Get Movies
 
 First log into the Kaleidescape webstore. Use the browser development tools to get the value of the `STORE_PROD_SESSION_ID` cookie.
 
-Second, run the following commands:
+Second, run the following commands to get the list of all movies on the account:
 ```shell
 source .venv/Scripts/activate
 python kaleidescape-movies-as-csv.py
 ```
 
 Enter the `STORE_PROD_SESSION_ID` cookie value. 
+
+If successful, the script will generate a `kaleidescape-movies.csv` file.
+
+
+## Get Invoices
+
+First log into the Kaleidescape webstore. Use the browser development tools to get the value of the `STORE_PROD_SESSION_ID` cookie.
+
+Second, run the following commands to get the list of all invoices on the account:
+```shell
+source .venv/Scripts/activate
+python kaleidescape-invoices-as-csv.py
+```
+
+Enter the `STORE_PROD_SESSION_ID` cookie value.
+
+If successful, the script will generate a `kaleidescape-invoices.csv` file.
 
 
 ## License
