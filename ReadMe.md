@@ -29,7 +29,7 @@ If successful, the script will generate a `kaleidescape-movies.csv` file.
 
 ## Get Invoices
 
-First log into the Kaleidescape webstore. Use the browser development tools to get the value of the `STORE_PROD_SESSION_ID` cookie.
+First log into the Kaleidescape webstore. Then go to _Manage_ > _Account_ > _Purchase History_. Once you see your purchase history, use the browser development tools to get the value of the `STORE_PROD_SESSION_ID` cookie.
 
 Second, run the following commands to get the list of all invoices on the account:
 ```shell
